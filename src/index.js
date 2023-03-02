@@ -2,12 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import { TodoProvider } from './context/todo_app_context';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <TodoProvider>
+  <React.StrictMode>
     <App />
-  </TodoProvider>
+  </React.StrictMode>
 );
 
