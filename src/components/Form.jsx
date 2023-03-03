@@ -11,7 +11,8 @@ const Form = ({addTask}) => {
         const small_id = unique_id.slice(0, 8)
         const newTask = {
             id: small_id,
-            text: taskText
+            text: taskText,
+            edit: false,
         }
         addTask(newTask)
         setTaskText('')
